@@ -7,6 +7,7 @@ import hello.core.member.MemoryMemberRepository;
 import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
 
+//객체 생성과 연결은 AppConfig(외부)가 담당
 public class AppConfig {
 
     public MemberService memberService() {
