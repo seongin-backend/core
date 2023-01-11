@@ -10,7 +10,7 @@ public class MemberServiceTest {
     MemberService memberService;
 
     @BeforeEach
-    void 세팅() {
+    void setUp() {
         memberService = new MemberSerivceImpl();
     }
 
@@ -24,7 +24,7 @@ public class MemberServiceTest {
         Member findMember = memberService.findMember(1L);
 
         //then
-         assertThat(member).isEqualTo(findMember); //멤버객체비교
+        assertThat(member).isEqualTo(findMember); //멤버객체비교
         assertThat(member.getName()).isEqualTo(findMember.getName()); //멤버아이디비교
     }
 }
